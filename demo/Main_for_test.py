@@ -59,7 +59,7 @@ model.fit(X_train, Y_train,batch_size=batch_size,epochs=epochs,verbose=1)  # val
 '''
 
 # load model
-model = load_model('d1_minus_rf_vs_d2_plus_rf_85.h5')  #
+model = load_model('RF_MarkerSpecies_D1_minus_trained.h5')  # RF_MarkerGenes_D1_minus_trained.h5; LEfSe_MarkerSpecies_D1_minus_trained.h5
 
 scores = model.evaluate(X_test, Y_test)
 y_pred = model.predict_classes(X_test)
